@@ -132,6 +132,9 @@ var world = {
     },
 
     start: function() {
+        if (this.config.isRunnung === true) {
+            return;
+        }
         console.log('world is running');
         this.config.timerId = window.setInterval(this.updateWorld.bind(this), this.options.speed);
         this.config.isRunnung = true;
