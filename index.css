@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding-top: 1px;
+    text-align: center;
+}
+
+main {
+    margin: 50px auto;
+    display: inline-block;
+}
+
+
+aside {
+    margin: auto;
+    width: 500px;
+}
+
+.speed {
+    margin: 10px;
+}
+
+aside div{
+    margin: 2px;
+}
+
+
+
+
+
+
+
