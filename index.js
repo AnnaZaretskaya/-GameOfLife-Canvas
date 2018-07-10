@@ -152,6 +152,7 @@ var world = {
             this.updateOptions();
             if (this.config.isRunnung) {
                 window.clearInterval(this.config.timerId);
+                this.config.isRunnung = false;
                 this.start();
             }
         }.bind(this) );
@@ -159,10 +160,10 @@ var world = {
     },
 
     start: function() {
+        console.log('world is running', this.config.isRunnung);
         if (this.config.isRunnung === true) {
             return;
         }
-        console.log('world is running');
         this.config.timerId = window.setInterval(this.updateWorld.bind(this), this.options.speed);
         this.config.isRunnung = true;
     },
